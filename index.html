@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="canonical" href="https://officialteacher43.github.io/92team-website-/" />
+  <link rel="canonical" href="https://officialteacher43.github.io/92team-website-/">
   <link rel="icon" type="image/png" sizes="48x48" href="https://www.92team.com/wp-content/uploads/2025/12/92team-logo.webp">
 
   <title>92R Team | 92Team Official Platforms</title>
-  <meta name="description" content="Explore the 92Team platform directory, including 92R, 92Strike and 92Blaze. Find platform information and contact Official Teacher for support." />
-  <meta name="robots" content="index, follow" />
+  <meta name="description" content="Explore the 92Team platform directory, including 92R, 92Strike, 92Blaze and more. Official invitation codes and support from Official Teacher.">
+  <meta name="robots" content="index, follow">
 
-  <meta property="og:title" content="92R Team | 92Team Official Platforms" />
-  <meta property="og:description" content="Explore the 92Team platform directory and find contact information for Official Teacher support." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://officialteacher43.github.io/92team-website-/" />
-  <meta property="og:image" content="https://www.92team.com/wp-content/uploads/2025/12/92team-logo.webp" />
-  <meta name="twitter:card" content="summary_large_image" />
+  <meta property="og:title" content="92R Team | 92Team Official Platforms">
+  <meta property="og:description" content="All official 92Team platforms in one place. Color Prediction, WinGo, Aviator and more.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://officialteacher43.github.io/92team-website-/">
+  <meta property="og:image" content="https://www.92team.com/wp-content/uploads/2025/12/92team-logo.webp">
+  <meta name="twitter:card" content="summary_large_image">
 
   <style>
     :root {
@@ -51,13 +51,47 @@
       padding: 0 18px;
     }
 
+    /* Top Navigation */
+    .top-nav {
+      background: linear-gradient(90deg, #1a0a0a, #2a1010);
+      border-bottom: 2px solid #ff4d4d;
+      position: sticky;
+      top: 0;
+      z-index: 200;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 10px 12px;
+    }
+    .nav-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 14px;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: #fff;
+      background: rgba(255,255,255,0.08);
+      transition: 0.2s;
+    }
+    .nav-item:hover, .nav-item.active {
+      background: #ff4d4d;
+      color: #fff;
+    }
+    .nav-item.home {
+      background: #00e676;
+      color: #000;
+    }
+
     header {
       background: rgba(8, 18, 15, 0.92);
       border-bottom: 1px solid var(--border);
       padding: 14px 0;
-      position: sticky;
-      top: 0;
-      z-index: 200;
       backdrop-filter: blur(12px);
     }
 
@@ -150,45 +184,37 @@
 
     .hero-actions a {
       padding: 13px 28px;
-      border-radius: 8px;
+      border-radius: 10px;
       font-weight: 700;
-      font-size: 0.98rem;
-      transition: transform 0.2s, box-shadow 0.2s;
+      font-size: 1rem;
     }
-    .hero-actions a:hover { transform: translateY(-2px); }
-
     .btn-main {
       background: linear-gradient(135deg, var(--green), #00c853);
       color: #000;
-      box-shadow: 0 4px 18px rgba(0, 230, 118, 0.3);
     }
     .btn-alt {
-      background: linear-gradient(135deg, var(--purple), #7b1fa2);
-      color: #fff;
-      box-shadow: 0 4px 18px rgba(176, 64, 255, 0.3);
+      background: transparent;
+      border: 2px solid var(--purple);
+      color: var(--purple);
     }
 
-    section { padding: 52px 0; }
-
     .sec-title {
+      font-size: 1.7rem;
       text-align: center;
-      font-size: 1.8rem;
-      font-weight: 700;
       margin-bottom: 8px;
+      color: var(--green);
     }
     .sec-sub {
       text-align: center;
       color: var(--muted);
-      margin-bottom: 36px;
-      max-width: 580px;
-      margin-left: auto;
-      margin-right: auto;
-      font-size: 1.02rem;
+      margin-bottom: 32px;
     }
+
+    #platforms { padding: 50px 0; }
 
     .plat-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
       gap: 20px;
     }
 
@@ -222,176 +248,103 @@
       object-fit: contain;
       margin-bottom: 14px;
       background: #0d0d14;
-      padding: 6px;
     }
 
     .plat-card h3 {
-      font-size: 1.35rem;
-      margin-bottom: 4px;
-      color: var(--green);
+      font-size: 1.25rem;
+      margin-bottom: 6px;
+      color: var(--text);
     }
     .plat-card.soon h3 { color: #999; }
 
     .plat-bonus {
-      font-size: 0.88rem;
       color: var(--gold);
-      font-weight: 600;
-      margin-bottom: 10px;
+      font-weight: 700;
+      font-size: 0.95rem;
+      margin-bottom: 8px;
     }
 
     .plat-desc {
       color: var(--muted);
-      font-size: 0.88rem;
+      font-size: 0.9rem;
       margin-bottom: 14px;
       flex-grow: 1;
-      line-height: 1.45;
     }
 
     .code-box {
-      width: 100%;
-      background: #0c0c12;
-      border: 1px dashed var(--gold);
+      background: rgba(0,230,118,0.1);
+      border: 1px solid rgba(0,230,118,0.35);
+      color: var(--green);
+      padding: 7px 14px;
       border-radius: 8px;
-      padding: 10px;
-      margin-bottom: 14px;
-      font-size: 1.05rem;
       font-weight: 700;
-      color: var(--gold);
-      letter-spacing: 0.8px;
+      font-size: 0.9rem;
+      margin-bottom: 14px;
     }
     .code-box.empty {
-      border-color: #444;
-      color: #666;
-      font-weight: 500;
-      font-size: 0.9rem;
+      background: rgba(100,100,100,0.15);
+      border-color: #555;
+      color: #888;
     }
 
     .btn-reg {
-      display: block;
-      width: 100%;
-      padding: 11px;
-      border-radius: 8px;
-      font-weight: 700;
-      font-size: 0.95rem;
+      display: inline-block;
       background: linear-gradient(135deg, var(--green), #00c853);
       color: #000;
-      transition: opacity 0.2s;
-    }
-    .btn-reg:hover { opacity: 0.88; }
-
-    .btn-soon {
-      display: block;
+      padding: 11px 22px;
+      border-radius: 9px;
+      font-weight: 700;
+      font-size: 0.95rem;
       width: 100%;
-      padding: 11px;
-      border-radius: 8px;
+      max-width: 180px;
+    }
+    .btn-soon {
+      display: inline-block;
+      background: #333;
+      color: #999;
+      padding: 11px 22px;
+      border-radius: 9px;
       font-weight: 600;
-      font-size: 0.92rem;
-      background: #252530;
-      color: #777;
-      cursor: default;
-    }
-
-    .feat-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-      gap: 16px;
-    }
-
-    .feat-item {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 22px 18px;
-      transition: border-color 0.2s;
-    }
-    .feat-item:hover { border-color: var(--green); }
-
-    .feat-item h4 {
-      font-size: 1.05rem;
-      color: var(--gold);
-      margin-bottom: 6px;
-    }
-    .feat-item p {
-      color: var(--muted);
-      font-size: 0.9rem;
+      font-size: 0.95rem;
+      width: 100%;
+      max-width: 180px;
     }
 
     .steps {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
-      gap: 14px;
-      counter-reset: step;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+      margin-top: 10px;
     }
-
     .step {
       background: var(--card);
       border: 1px solid var(--border);
       border-radius: 12px;
-      padding: 20px 14px;
+      padding: 20px;
       text-align: center;
     }
-
-    .step::before {
-      counter-increment: step;
-      content: counter(step);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 32px;
-      height: 32px;
-      background: var(--green);
-      color: #000;
-      font-weight: 800;
-      border-radius: 50%;
-      margin: 0 auto 12px;
-      font-size: 0.95rem;
-    }
-
-    .step h4 { font-size: 1rem; margin-bottom: 4px; }
-    .step p { color: var(--muted); font-size: 0.88rem; }
-
-    .teacher-box {
-      background: linear-gradient(135deg, #161022 0%, #0e1a14 100%);
-      border: 1px solid rgba(176, 64, 255, 0.45);
-      border-radius: 18px;
-      padding: 42px 28px;
-      text-align: center;
-    }
-
-    .teacher-box h2 {
+    .step h4 {
       color: var(--gold);
-      font-size: 1.7rem;
-      margin-bottom: 10px;
+      margin-bottom: 8px;
     }
-    .teacher-box > p {
-      color: var(--muted);
-      max-width: 520px;
-      margin: 0 auto 24px;
-    }
+    .step p { color: var(--muted); font-size: 0.95rem; }
 
-    .teacher-links {
-      display: flex;
-      justify-content: center;
-      gap: 14px;
-      flex-wrap: wrap;
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 16px;
     }
-
-    .teacher-links a {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      background: rgba(255,255,255,0.06);
-      padding: 12px 22px;
-      border-radius: 9px;
-      color: #fff;
-      font-weight: 600;
+    .why-item {
+      background: var(--card);
       border: 1px solid var(--border);
-      transition: border-color 0.2s, background 0.2s;
+      border-radius: 12px;
+      padding: 20px;
     }
-    .teacher-links a:hover {
-      border-color: var(--green);
-      background: rgba(0, 230, 118, 0.08);
+    .why-item h4 {
+      color: var(--green);
+      margin-bottom: 8px;
     }
+    .why-item p { color: var(--muted); font-size: 0.95rem; }
 
     .faq-item {
       background: var(--card);
@@ -400,68 +353,68 @@
       margin-bottom: 10px;
       overflow: hidden;
     }
-
     .faq-item summary {
-      padding: 15px 18px;
+      padding: 16px 18px;
       cursor: pointer;
       font-weight: 600;
       list-style: none;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
     }
     .faq-item summary::-webkit-details-marker { display: none; }
-    .faq-item summary::after {
-      content: "+";
-      font-size: 1.25rem;
-      color: var(--green);
-    }
-    .faq-item[open] summary::after { content: "−"; }
-
     .faq-item p {
-      padding: 0 18px 15px;
+      padding: 0 18px 16px;
       color: var(--muted);
-      font-size: 0.95rem;
     }
 
     .final-cta {
-      text-align: center;
       padding: 60px 0;
-      background: linear-gradient(120deg, rgba(0, 230, 118, 0.18), rgba(176, 64, 255, 0.2));
+      text-align: center;
+      background: radial-gradient(ellipse at center, rgba(0,230,118,0.12), transparent 70%);
     }
-    .final-cta h2 { font-size: 1.9rem; margin-bottom: 10px; }
-    .final-cta p { color: var(--muted); margin-bottom: 24px; }
+    .final-cta h2 {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+    }
+    .final-cta p {
+      color: var(--muted);
+      margin-bottom: 24px;
+    }
 
     footer {
-      border-top: 1px solid var(--border);
-      padding: 26px 0;
       text-align: center;
+      padding: 30px 0;
       color: var(--muted);
-      font-size: 0.88rem;
+      font-size: 0.9rem;
+      border-top: 1px solid var(--border);
     }
 
-    body {
-      background:
-        radial-gradient(ellipse at 8% 8%, rgba(0, 230, 118, 0.28), transparent 42%),
-        radial-gradient(ellipse at 92% 20%, rgba(176, 64, 255, 0.28), transparent 45%),
-        radial-gradient(ellipse at 50% 95%, rgba(0, 200, 150, 0.18), transparent 48%),
-        linear-gradient(145deg, #071f18, #1a0f2e, #061c18);
-      background-attachment: fixed;
-    }
-
-    @media (max-width: 640px) {
-      .header-btns { display: none; }
-      .hero-actions a { width: 100%; text-align: center; }
-      .plat-grid { grid-template-columns: 1fr; }
-      .logo img { height: 36px; }
+    @media (max-width: 600px) {
+      .hero { padding: 40px 0 35px; }
+      .plat-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
+      .plat-logo { width: 70px; height: 70px; }
     }
   </style>
 </head>
 <body>
 
+  <!-- Top Navigation -->
+  <div class="top-nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-item home">HOME</a>
+      <a href="92r.html" class="nav-item">92R</a>
+      <a href="92strike.html" class="nav-item">92STRIKE</a>
+      <a href="92blaze.html" class="nav-item">92BLAZE</a>
+      <a href="92nova.html" class="nav-item">92NOVA</a>
+      <a href="92dadu.html" class="nav-item">92DADU</a>
+      <a href="92go.html" class="nav-item">92GO</a>
+      <a href="92coco.html" class="nav-item">92COCO</a>
+      <a href="92glory.html" class="nav-item">92GLORY</a>
+      <a href="92star.html" class="nav-item">92STAR</a>
+    </div>
+  </div>
+
   <header>
     <div class="container header-inner">
-      <a href="#" class="logo">
+      <a href="index.html" class="logo">
         <img src="https://www.92team.com/wp-content/uploads/2025/12/92team-logo.webp" alt="92Team Logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
         <span class="logo-text" style="display:none">92TEAM</span>
       </a>
@@ -477,7 +430,7 @@
       <div class="hero-badge">Official Platforms • Pakistan 2026</div>
       <h1><span>92Team</span><br>Official Website</h1>
       <p>
-        All official 92Team platforms in one place. Play Color Prediction, WinGo, Aviator & more.
+        All official 92Team platforms in one place. Play Color Prediction, WinGo, Aviator &amp; more.
         Fast JazzCash / EasyPaisa. 24/7 support from Official Teacher.
       </p>
       <div class="hero-actions">
@@ -490,96 +443,105 @@
   <section id="platforms">
     <div class="container">
       <h2 class="sec-title">All 92Team Platforms</h2>
-      <p class="sec-sub">Choose a platform and register with the official invitation code</p>
+      <p class="sec-sub">Choose a platform and open its page for registration details</p>
 
       <div class="plat-grid">
 
+        <!-- 92R -->
         <div class="plat-card active">
           <img class="plat-logo" src="https://www.92team.com/wp-content/uploads/2025/12/92team-92r.webp" alt="92R" loading="lazy">
           <h3>92R</h3>
           <div class="plat-bonus">100% up to 7,500</div>
-          <p class="plat-desc">Color Prediction, WinGo, Aviator, Cricket. Fast JazzCash & EasyPaisa.</p>
+          <p class="plat-desc">Color Prediction, WinGo, Aviator, Cricket. Fast JazzCash &amp; EasyPaisa.</p>
           <div class="code-box">Code: 100037</div>
-          <a href="https://www.92slot.com/#/register?invitationCode=66313100037" class="btn-reg" target="_blank" rel="noopener">Register Now</a>
+          <a href="92r.html" class="btn-reg">Open Platform</a>
         </div>
 
+        <!-- 92STRIKE -->
         <div class="plat-card active">
           <img class="plat-logo" src="https://www.92team.com/wp-content/uploads/2025/12/92team-92strike-sm.webp" alt="92Strike" loading="lazy">
           <h3>92STRIKE</h3>
           <div class="plat-bonus">100% up to 3,000</div>
-          <p class="plat-desc">Slots, Casino & Color Prediction. Real money gaming app.</p>
+          <p class="plat-desc">Slots, Casino &amp; Color Prediction. Real money gaming app.</p>
           <div class="code-box">Code: 100082</div>
-          <a href="https://www.92strike88.com/#/register?invitationCode=44841100082" class="btn-reg" target="_blank" rel="noopener">Register Now</a>
+          <a href="92strike.html" class="btn-reg">Open Platform</a>
         </div>
 
+        <!-- 92BLAZE -->
         <div class="plat-card active">
           <img class="plat-logo" src="https://www.92team.com/wp-content/uploads/2025/12/92team-92blaze-icon.webp" alt="92Blaze" loading="lazy">
           <h3>92BLAZE</h3>
           <div class="plat-bonus">100% up to 3,000</div>
-          <p class="plat-desc">Official 92Blaze platform with fast registration & rewards.</p>
+          <p class="plat-desc">Official 92Blaze platform with fast registration &amp; rewards.</p>
           <div class="code-box">Code: 42RAD8N</div>
-          <a href="https://92blaze22.com/register?inviteCode=42RAD8N" class="btn-reg" target="_blank" rel="noopener">Register Now</a>
+          <a href="92blaze.html" class="btn-reg">Open Platform</a>
         </div>
 
+        <!-- 92DADU -->
         <div class="plat-card soon">
           <img class="plat-logo" src="https://www.92team.com/wp-content/uploads/2025/12/92team-92dadu.webp" alt="92Dadu" loading="lazy">
           <h3>92DADU</h3>
           <div class="plat-bonus">100% up to 5,000</div>
-          <p class="plat-desc">Popular color prediction & lottery platform.</p>
+          <p class="plat-desc">Popular color prediction &amp; lottery platform.</p>
           <div class="code-box empty">Code: Coming Soon</div>
-          <span class="btn-soon">Coming Soon</span>
+          <a href="92dadu.html" class="btn-soon">Coming Soon</a>
         </div>
 
+        <!-- 92GO -->
         <div class="plat-card soon">
           <img class="plat-logo" src="https://www.92team.com/wp-content/uploads/2025/12/92team-92go.webp" alt="92Go" loading="lazy">
           <h3>92GO</h3>
           <div class="plat-bonus">Sign up bonus 500</div>
-          <p class="plat-desc">Mobile-first gaming & instant rewards platform.</p>
+          <p class="plat-desc">Mobile-first gaming &amp; instant rewards platform.</p>
           <div class="code-box empty">Code: Coming Soon</div>
-          <span class="btn-soon">Coming Soon</span>
+          <a href="92go.html" class="btn-soon">Coming Soon</a>
         </div>
 
+        <!-- 92COCO -->
         <div class="plat-card soon">
           <img class="plat-logo" src="https://www.92team.com/wp-content/uploads/2025/12/92eteam-92-coco.webp" alt="92Coco" loading="lazy">
           <h3>92COCO</h3>
           <div class="plat-bonus">100% up to 6,000</div>
           <p class="plat-desc">Exciting games with high welcome bonus.</p>
           <div class="code-box empty">Code: Coming Soon</div>
-          <span class="btn-soon">Coming Soon</span>
+          <a href="92coco.html" class="btn-soon">Coming Soon</a>
         </div>
 
+        <!-- 92GLORY -->
         <div class="plat-card soon">
           <img class="plat-logo" src="https://www.92team.com/wp-content/uploads/2025/12/92team-92glory.webp" alt="92Glory" loading="lazy">
           <h3>92GLORY</h3>
           <div class="plat-bonus">100% up to 4,000</div>
           <p class="plat-desc">Trusted platform with multiple game categories.</p>
           <div class="code-box empty">Code: Coming Soon</div>
-          <span class="btn-soon">Coming Soon</span>
+          <a href="92glory.html" class="btn-soon">Coming Soon</a>
         </div>
 
+        <!-- 92STAR -->
         <div class="plat-card soon">
           <img class="plat-logo" src="https://www.92team.com/wp-content/uploads/2025/12/92team-92star-sm.webp" alt="92Star" loading="lazy">
           <h3>92STAR</h3>
           <div class="plat-bonus">100% up to 3,500</div>
-          <p class="plat-desc">Star platform for color prediction & more.</p>
+          <p class="plat-desc">Star platform for color prediction &amp; more.</p>
           <div class="code-box empty">Code: Coming Soon</div>
-          <span class="btn-soon">Coming Soon</span>
+          <a href="92star.html" class="btn-soon">Coming Soon</a>
         </div>
 
+        <!-- 92NOVA -->
         <div class="plat-card soon">
           <img class="plat-logo" src="https://www.92team.com/wp-content/uploads/2025/12/92nova-sm-icon.webp" alt="92Nova" loading="lazy">
           <h3>92NOVA</h3>
           <div class="plat-bonus">100% up to 2,500</div>
           <p class="plat-desc">New generation 92Team platform.</p>
           <div class="code-box empty">Code: Coming Soon</div>
-          <span class="btn-soon">Coming Soon</span>
+          <a href="92nova.html" class="btn-soon">Coming Soon</a>
         </div>
 
       </div>
     </div>
   </section>
 
-  <section style="background: rgba(10,10,18,0.55);">
+  <section style="background: rgba(10,10,18,0.55); padding: 50px 0;">
     <div class="container">
       <h2 class="sec-title">How to Register</h2>
       <p class="sec-sub">4 simple steps to start playing</p>
@@ -590,8 +552,8 @@
           <p>Pick any 92Team platform above</p>
         </div>
         <div class="step">
-          <h4>Click Register</h4>
-          <p>Open the official register link</p>
+          <h4>Open Page</h4>
+          <p>Click Open Platform or Coming Soon</p>
         </div>
         <div class="step">
           <h4>Enter Details</h4>
@@ -605,33 +567,33 @@
     </div>
   </section>
 
-  <section>
+  <section style="padding: 50px 0;">
     <div class="container">
       <h2 class="sec-title">Why Choose 92Team?</h2>
       <p class="sec-sub">Trusted platforms under one brand</p>
 
-      <div class="feat-grid">
-        <div class="feat-item">
+      <div class="why-grid">
+        <div class="why-item">
           <h4>Multiple Official Platforms</h4>
           <p>9+ platforms under the 92Team brand – choose what you like.</p>
         </div>
-        <div class="feat-item">
+        <div class="why-item">
           <h4>Real Money Withdrawals</h4>
           <p>Withdraw to JazzCash, EasyPaisa and bank transfer quickly.</p>
         </div>
-        <div class="feat-item">
+        <div class="why-item">
           <h4>Welcome Bonuses</h4>
           <p>High welcome bonuses up to 100% on most platforms.</p>
         </div>
-        <div class="feat-item">
+        <div class="why-item">
           <h4>Huge Game Variety</h4>
           <p>Color Prediction, WinGo, Aviator, slots, Cricket and more.</p>
         </div>
-        <div class="feat-item">
+        <div class="why-item">
           <h4>Referral Rewards</h4>
           <p>Invite friends and earn when they play and deposit.</p>
         </div>
-        <div class="feat-item">
+        <div class="why-item">
           <h4>24/7 Teacher Support</h4>
           <p>Direct help, tips and gift codes from Official Teacher.</p>
         </div>
@@ -639,20 +601,7 @@
     </div>
   </section>
 
-  <section>
-    <div class="container">
-      <div class="teacher-box">
-        <h2>Official Teacher Support</h2>
-        <p>Daily guidance, tips, gift codes and fast support for all 92Team platforms. Contact anytime.</p>
-        <div class="teacher-links">
-          <a href="https://t.me/TEACHERCLARA92" target="_blank" rel="noopener">📱 Telegram @TEACHERCLARA92</a>
-          <a href="https://wa.me/8562098842676" target="_blank" rel="noopener">💬 WhatsApp +856 20 98 842 676</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section style="background: rgba(10,10,18,0.5);">
+  <section style="background: rgba(10,10,18,0.55); padding: 50px 0;">
     <div class="container">
       <h2 class="sec-title">Frequently Asked Questions</h2>
       <p class="sec-sub">Common questions about 92Team</p>
@@ -669,7 +618,7 @@
 
       <details class="faq-item">
         <summary>How do I register correctly?</summary>
-        <p>Click the Register button of your chosen platform, enter your mobile number, create a password, and enter the exact invitation code shown on this website.</p>
+        <p>Open the platform page, click the Register button, enter your mobile number, create a password, and enter the exact invitation code shown.</p>
       </details>
 
       <details class="faq-item">
@@ -687,10 +636,10 @@
   <section class="final-cta">
     <div class="container">
       <h2>Ready to Start?</h2>
-      <p>Register now with the official invitation code and claim your welcome bonus.</p>
+      <p>Open any active platform page and register with the official invitation code.</p>
       <div class="hero-actions">
-        <a href="https://www.92slot.com/#/register?invitationCode=66313100037" class="btn-main" target="_blank" rel="noopener">Register 92R</a>
-        <a href="https://www.92strike88.com/#/register?invitationCode=44841100082" class="btn-alt" target="_blank" rel="noopener">Register 92Strike</a>
+        <a href="92r.html" class="btn-main">Open 92R</a>
+        <a href="92strike.html" class="btn-alt">Open 92Strike</a>
       </div>
     </div>
   </section>
