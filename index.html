@@ -393,10 +393,22 @@
       .plat-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
       .plat-logo { width: 70px; height: 70px; }
     }
+  .header-nav-wrap {
+  position: sticky;
+  top: 0;
+  z-index: 200;
+}
+
+.header-nav-wrap .site-header,
+.header-nav-wrap .top-nav {
+  position: relative;
+  top: auto;
+}
   </style>
 </head>
 <body>
 
+  <div class="header-nav-wrap">
   <header>
   <div class="container header-inner">
     <a href="index.html" class="logo">
@@ -445,6 +457,8 @@
       <a href="92star.html" class="nav-item">92STAR</a>
     </div>
   </div>
+    
+</div>
 
   <section class="hero">
     <div class="container">
