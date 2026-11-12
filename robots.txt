@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://officialteacher43.github.io/92team-website-/sitemap.xml
