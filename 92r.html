@@ -54,9 +54,13 @@
       background: rgba(255,255,255,0.08);
       transition: 0.2s;
     }
-    .nav-item:hover, .nav-item.active {
+    .nav-item:hover {
       background: #ff4d4d;
       color: #fff;
+    }
+    .nav-item.active {
+      background: #00e676;
+      color: #000;
     }
     .nav-item.home {
       background: #00e676;
@@ -70,11 +74,11 @@
       background: radial-gradient(ellipse at center, rgba(0,230,118,0.15), transparent 70%);
     }
     .plat-header h1 {
-      font-size: 2.4rem;
+      font-size: 2.3rem;
       margin-bottom: 8px;
-      background: linear-gradient(90deg, #00e676, #ffd700);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      color: #00e676;
+      background: none;
+      -webkit-text-fill-color: #00e676;
     }
     .bonus {
       color: var(--gold);
