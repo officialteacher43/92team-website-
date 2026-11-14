@@ -24,28 +24,30 @@
     body { font-family: 'Segoe UI', system-ui, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
     a { text-decoration: none; color: inherit; }
     .container { max-width: 1100px; margin: 0 auto; padding: 0 16px; }
-    .top-nav { background: linear-gradient(90deg, #1a0a0a, #2a1010); border-bottom: 2px solid #ff4d4d; position: sticky; top: 0; z-index: 100; overflow-x: auto; white-space: nowrap; }
+    .top-nav { background: linear-gradient(90deg, #1a1005, #2a1a08); border-bottom: 2px solid #ff9800; position: sticky; top: 0; z-index: 100; overflow-x: auto; white-space: nowrap; }
     .nav-inner { display: flex; align-items: center; gap: 6px; padding: 10px 12px; }
     .nav-item { display: inline-flex; padding: 8px 14px; border-radius: 8px; font-size: 0.9rem; font-weight: 600; color: #fff; background: rgba(255,255,255,0.08); transition: 0.2s; }
-    .nav-item:hover { background: #ff4d4d; }
+    .nav-item:hover { background: #ff9800; color: #000; }
     .nav-item.active { background: #ff9800; color: #000; }
-    .nav-item.home { background: #00e676; color: #000; }
-    .plat-header { text-align: center; padding: 50px 0 30px; background: radial-gradient(ellipse at center, #ff980022, transparent 70%); }
+    .nav-item.home { background: #ffd700; color: #000; }
+    .plat-header { text-align: center; padding: 40px 0 30px; background: radial-gradient(ellipse at center, #ff980044, transparent 70%); }
     .plat-header h1 { font-size: 2.3rem; margin-bottom: 10px; color: #ff9800; }
     .bonus { color: var(--gold); font-size: 1.15rem; font-weight: 700; margin-bottom: 14px; }
     .coming { display: inline-block; background: #333; color: #999; padding: 14px 36px; border-radius: 10px; font-weight: 700; font-size: 1.1rem; border: 1px solid #555; margin-top: 8px; }
     section { padding: 40px 0; }
-    .sec-title { font-size: 1.5rem; text-align: center; color: var(--muted); margin-bottom: 20px; }
-    .info-box { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 24px; max-width: 700px; margin: 0 auto 16px; }
+    .sec-title { font-size: 1.5rem; text-align: center; color: #ff9800; margin-bottom: 20px; }
+    .info-box { background: var(--card); border: 1px solid #ff980055; border-radius: 14px; padding: 24px; max-width: 700px; margin: 0 auto 16px; }
     .info-box h3 { color: #ff9800; margin-bottom: 10px; }
     .info-box p { color: var(--muted); margin-bottom: 10px; }
     .game-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px; max-width: 900px; margin: 0 auto; }
-    .game-card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 18px; text-align: center; }
+    .game-card { background: var(--card); border: 1px solid #ff980055; border-radius: 12px; padding: 18px; text-align: center; }
     .game-card h3 { color: var(--gold); margin-bottom: 6px; font-size: 1rem; }
     .game-card p { color: var(--muted); font-size: 0.9rem; }
     .steps { display: grid; gap: 12px; max-width: 700px; margin: 0 auto; }
     .step { background: var(--card); border-left: 4px solid #ff9800; padding: 14px 18px; border-radius: 0 10px 10px 0; color: var(--muted); }
     footer { text-align: center; padding: 30px 0; color: var(--muted); font-size: 0.9rem; border-top: 1px solid var(--border); }
+    .reg-btn { display: inline-block; background: linear-gradient(135deg, #ff9800, #ffd700); color: #000; padding: 14px 32px; border-radius: 10px; font-weight: 700; font-size: 1.05rem; transition: 0.3s; }
+    .game-card:hover { border-color: #ff9800; transform: translateY(-4px); transition: 0.3s; }
   </style>
 </head>
 <body>
@@ -65,8 +67,8 @@
   </div>
 
   <!-- Platform Header -->
-    <div class="container">
-      <img src="https://www.92team.com/wp-content/uploads/2025/12/92team-92dadu.webp" alt="92DADU Logo" style="width:110px;height:110px;margin:0 auto 16px;border-radius:20px;display:block;object-fit:contain;background:#0d0d14;">
+    <div class="plat-header"><div class="container">
+      <img src="https://www.92team.com/wp-content/uploads/2025/12/92team-92dadu.webp" alt="92DADU Logo" style="width:120px;height:120px;margin:0 auto 18px;border-radius:22px;display:block;object-fit:contain;background:#0d0d14;box-shadow:0 8px 30px rgba(255,152,0,0.25);">
       <h1>92DADU Official</h1>
       <div class="bonus">100% Welcome Bonus up to 3,500</div>
       <p style="color:var(--muted); margin-bottom:20px;">Color Prediction • WinGo • Aviator • Cricket</p>
@@ -76,13 +78,16 @@
 
   <!-- Screenshot Placeholder -->
   <section style="padding:10px 0 30px;">
-    <div class="container" style="text-align:center;">
-      <div style="background:var(--card);border:2px dashed #444;border-radius:16px;padding:40px 20px;max-width:380px;margin:0 auto;">
-        <p style="color:var(--muted);">📷 App Screenshot Placeholder</p>
-        <p style="color:#666;font-size:0.85rem;margin-top:6px;">Real screenshots will be added when the platform is ready</p>
-      </div>
+  <div class="container" style="text-align:center;">
+    <h2 class="sec-title">App Screenshots</h2>
+    <p style="color:var(--muted);margin-bottom:15px;">Swipe to view screenshots</p>
+    <div style="display:flex;gap:12px;overflow-x:auto;padding:10px;">
+      <img src="screenshot1.jpg" style="width:220px;border-radius:12px;flex-shrink:0;">
+      <img src="screenshot2.jpg" style="width:220px;border-radius:12px;flex-shrink:0;">
+      <img src="screenshot3.jpg" style="width:220px;border-radius:12px;flex-shrink:0;">
     </div>
-  </section>
+  </div>
+</section>
 
   <section>
     <div class="container">
