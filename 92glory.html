@@ -92,9 +92,71 @@
       text-decoration: underline;
     }
 
+  
+    /* Sticky top navigation (same as Home) */
+    .top-nav {
+      background: linear-gradient(90deg, #1a0a0a, #2a1010);
+      border-bottom: 2px solid #ff4d4d;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      padding: 10px 12px;
+      width: max-content;
+      min-width: 100%;
+      box-sizing: border-box;
+    }
+    .nav-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 14px;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: #fff;
+      background: rgba(255,255,255,0.08);
+      text-decoration: none;
+      transition: 0.2s;
+    }
+    .nav-item:hover, .nav-item.active {
+      background: #ff4d4d;
+      color: #fff;
+    }
+    .nav-item.home {
+      background: #00e676;
+      color: #000;
+    }
+    .nav-item.home:hover {
+      background: #00c853;
+      color: #000;
+    }
+
   </style>
 </head>
 <body>
+  <div class="top-nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-item home">HOME</a>
+      <a href="92r.html" class="nav-item">92R</a>
+      <a href="92strike.html" class="nav-item">92STRIKE</a>
+      <a href="92nova.html" class="nav-item">92NOVA</a>
+      <a href="92blaze.html" class="nav-item">92BLAZE</a>
+      <a href="92dadu.html" class="nav-item">92DADU</a>
+      <a href="92go.html" class="nav-item">92GO</a>
+      <a href="92coco.html" class="nav-item">92COCO</a>
+      <a href="92glory.html" class="nav-item active">92GLORY</a>
+      <a href="92star.html" class="nav-item">92STAR</a>
+    </div>
+  </div>
+
   <header>
     <img src="https://www.92team.com/wp-content/uploads/2025/12/92team-92glory.webp" alt="Logo" style="height:70px; margin-bottom:12px; filter: drop-shadow(0 0 8px rgba(255,255,255,0.3));">
     <h1>92Glory Official</h1>
