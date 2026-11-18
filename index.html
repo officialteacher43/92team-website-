@@ -176,13 +176,14 @@
       font-weight: 800;
       line-height: 1.15;
       margin-bottom: 14px;
+      color: var(--gold);
     }
-
     .hero h1 span {
-      background: linear-gradient(90deg, var(--green), var(--gold));
+      background: linear-gradient(90deg, #ffd700, #ffec8b, #ffd700);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
+      filter: drop-shadow(0 0 12px rgba(255,215,0,0.35));
     }
 
     .hero p {
@@ -206,20 +207,29 @@
       font-size: 1rem;
     }
     .btn-main {
-      background: linear-gradient(135deg, var(--green), #00c853);
-      color: #000;
+      background: linear-gradient(135deg, #ffd700, #ffb300);
+      color: #1a1a1a;
+      box-shadow: 0 4px 16px rgba(255,215,0,0.35);
+    }
+    .btn-main:hover {
+      filter: brightness(1.08);
     }
     .btn-alt {
-      background: transparent;
-      border: 2px solid var(--purple);
-      color: var(--purple);
+      background: linear-gradient(135deg, #ff3d3d, #e53935);
+      border: none;
+      color: #fff;
+      box-shadow: 0 4px 16px rgba(255,61,61,0.35);
+    }
+    .btn-alt:hover {
+      filter: brightness(1.08);
     }
 
     .sec-title {
       font-size: 1.7rem;
       text-align: center;
       margin-bottom: 8px;
-      color: var(--green);
+      color: var(--gold);
+      text-shadow: 0 0 20px rgba(255,215,0,0.25);
     }
     .sec-sub {
       text-align: center;
@@ -388,6 +398,7 @@
       background: radial-gradient(ellipse at center, rgba(0,230,118,0.12), transparent 70%);
     }
     .final-cta h2 {
+      color: var(--gold);
       font-size: 1.8rem;
       margin-bottom: 10px;
     }
@@ -409,6 +420,80 @@
       .plat-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
       .plat-logo { width: 70px; height: 70px; }
     }
+  
+    /* Per-platform colors (logo matched, vivid) */
+    .plat-card[data-plat="92r"] .code-box {
+      background: rgba(0,230,118,0.12);
+      border-color: rgba(0,230,118,0.5);
+      color: #00e676;
+    }
+    .plat-card[data-plat="92r"] .btn-reg {
+      background: linear-gradient(135deg, #00e676, #00c853);
+      color: #000;
+      box-shadow: 0 4px 14px rgba(0,230,118,0.35);
+    }
+
+    .plat-card[data-plat="92strike"] .code-box {
+      background: rgba(196,77,255,0.12);
+      border-color: rgba(196,77,255,0.5);
+      color: #c44dff;
+    }
+    .plat-card[data-plat="92strike"] .btn-reg {
+      background: linear-gradient(135deg, #c44dff, #9b2dff);
+      color: #fff;
+      box-shadow: 0 4px 14px rgba(196,77,255,0.35);
+    }
+
+    .plat-card[data-plat="92blaze"] .code-box {
+      background: rgba(0,229,255,0.12);
+      border-color: rgba(0,229,255,0.5);
+      color: #00e5ff;
+    }
+    .plat-card[data-plat="92blaze"] .btn-reg {
+      background: linear-gradient(135deg, #00e5ff, #00b8d4);
+      color: #003;
+      box-shadow: 0 4px 14px rgba(0,229,255,0.35);
+    }
+
+    .plat-card[data-plat="92dadu"] .code-box {
+      background: rgba(255,152,0,0.12);
+      border-color: rgba(255,152,0,0.5);
+      color: #ff9800;
+    }
+    .plat-card[data-plat="92dadu"] .btn-reg {
+      background: linear-gradient(135deg, #ff9800, #f57c00);
+      color: #1a1a1a;
+      box-shadow: 0 4px 14px rgba(255,152,0,0.35);
+    }
+
+    .plat-card[data-plat="92go"] .code-box {
+      background: rgba(179,77,255,0.12);
+      border-color: rgba(179,77,255,0.5);
+      color: #b34dff;
+    }
+    .plat-card[data-plat="92go"] .btn-reg {
+      background: linear-gradient(135deg, #b34dff, #9333ea);
+      color: #fff;
+      box-shadow: 0 4px 14px rgba(179,77,255,0.35);
+    }
+
+    .plat-card[data-plat="92coco"] .code-box {
+      background: rgba(255,214,0,0.12);
+      border-color: rgba(255,214,0,0.5);
+      color: #ffd600;
+    }
+    .plat-card[data-plat="92coco"] .btn-reg {
+      background: linear-gradient(135deg, #ffd600, #ffc107);
+      color: #1a1a1a;
+      box-shadow: 0 4px 14px rgba(255,214,0,0.35);
+    }
+
+    .plat-card[data-plat="92nova"] .code-box,
+    .plat-card[data-plat="92glory"] .code-box,
+    .plat-card[data-plat="92star"] .code-box {
+      /* keep empty style */
+    }
+
   </style>
 
   <!-- FAQ Schema -->
@@ -577,7 +662,7 @@
       <div class="plat-grid">
 
         <!-- 92NOVA -->
-        <div class="plat-card soon">
+        <div class="plat-card soon" data-plat="92nova">
           <img class="plat-logo" src="https://www.92team.com/wp-content/uploads/2025/12/92nova-sm-icon.webp" alt="92Nova" loading="lazy">
           <h3>92NOVA</h3>
           <div class="plat-bonus">100% up to 2,500</div>
@@ -587,37 +672,37 @@
         </div>
         
         <!-- 92R -->
-        <div class="plat-card active">
+        <div class="plat-card active" data-plat="92r">
           <img class="plat-logo" src="https://www.92team.com/wp-content/uploads/2025/12/92team-92r.webp" alt="92R" loading="lazy">
           <h3>92R</h3>
           <div class="plat-bonus">100% up to 7,500</div>
           <p class="plat-desc">Color Prediction, WinGo, Aviator, Cricket. Fast JazzCash &amp; EasyPaisa.</p>
           <div class="code-box">Code: 100037</div>
-          <a href="92r.html" class="btn-reg">Open Platform</a>
+          <a href="https://www.92slot.com/#/register?invitationCode=66313100037" class="btn-reg" target="_blank" rel="noopener noreferrer">Open Platform</a>
         </div>
 
         <!-- 92STRIKE -->
-        <div class="plat-card active">
+        <div class="plat-card active" data-plat="92strike">
           <img class="plat-logo" src="https://www.92team.com/wp-content/uploads/2025/12/92team-92strike-sm.webp" alt="92Strike" loading="lazy">
           <h3>92STRIKE</h3>
           <div class="plat-bonus">100% up to 3,000</div>
           <p class="plat-desc">Slots, Casino &amp; Color Prediction. Real money gaming app.</p>
           <div class="code-box">Code: 100082</div>
-          <a href="92strike.html" class="btn-reg">Open Platform</a>
+          <a href="https://www.92strike88.com/#/register?invitationCode=44841100082" class="btn-reg" target="_blank" rel="noopener noreferrer">Open Platform</a>
         </div>
 
         <!-- 92BLAZE -->
-        <div class="plat-card active">
+        <div class="plat-card active" data-plat="92blaze">
           <img class="plat-logo" src="https://www.92team.com/wp-content/uploads/2025/12/92team-92blaze-icon.webp" alt="92Blaze" loading="lazy">
           <h3>92BLAZE</h3>
           <div class="plat-bonus">100% up to 3,000</div>
           <p class="plat-desc">Official 92Blaze platform with fast registration &amp; rewards.</p>
           <div class="code-box">Code: 42RAD8N</div>
-          <a href="92blaze.html" class="btn-reg">Open Platform</a>
+          <a href="https://92blaze22.com/register?inviteCode=42RAD8N" class="btn-reg" target="_blank" rel="noopener noreferrer">Open Platform</a>
         </div>
 
           <!-- 92DADU -->
-        <div class="plat-card active">
+        <div class="plat-card active" data-plat="92dadu">
           <img class="plat-logo" src="https://www.92team.com/wp-content/uploads/2025/12/92team-92dadu.webp" alt="92Dadu" loading="lazy">
           <h3>92DADU</h3>
           <div class="plat-bonus">100% up to 3,000</div>
@@ -627,7 +712,7 @@
         </div>
 
         <!-- 92GO -->
-        <div class="plat-card active">
+        <div class="plat-card active" data-plat="92go">
           <img class="plat-logo" src="https://www.92team.com/wp-content/uploads/2025/12/92team-92go.webp" alt="92Go" loading="lazy">
           <h3>92GO</h3>
           <div class="plat-bonus">Sign up bonus 3,000</div>
@@ -637,7 +722,7 @@
         </div>
 
         <!-- 92COCO -->
-        <div class="plat-card active">
+        <div class="plat-card active" data-plat="92coco">
           <img class="plat-logo" src="https://www.92team.com/wp-content/uploads/2025/12/92eteam-92-coco.webp" alt="92Coco" loading="lazy">
           <h3>92COCO</h3>
           <div class="plat-bonus">100% up to 3,000</div>
@@ -647,7 +732,7 @@
         </div>
 
         <!-- 92GLORY -->
-        <div class="plat-card soon">
+        <div class="plat-card soon" data-plat="92glory">
           <img class="plat-logo" src="https://www.92team.com/wp-content/uploads/2025/12/92team-92glory.webp" alt="92Glory" loading="lazy">
           <h3>92GLORY</h3>
           <div class="plat-bonus">100% up to 4,000</div>
@@ -657,7 +742,7 @@
         </div>
 
         <!-- 92STAR -->
-        <div class="plat-card soon">
+        <div class="plat-card soon" data-plat="92star">
           <img class="plat-logo" src="https://www.92team.com/wp-content/uploads/2025/12/92team-92star-sm.webp" alt="92Star" loading="lazy">
           <h3>92STAR</h3>
           <div class="plat-bonus">100% up to 3,500</div>
